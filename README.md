@@ -14,6 +14,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ### Je opdracht:
 link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+www.swapfiets.nl
+https://swapfiets.nl/amsterdam/deluxe-7
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
