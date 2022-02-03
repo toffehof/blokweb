@@ -3,13 +3,11 @@
 	
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Jorn van 't Hof">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Swapfiets</title>
-	<link href="styles/style.css" rel="stylesheet">
+	<title>Swapfiets homepagina</title>
+	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-
-
 </head>
 
 <body>
@@ -17,14 +15,30 @@
 
 		<!-- hoofd navigatie -->
 
-		<nav >
-			<!-- logo --> <img src="">
+		<nav>
+			<!-- logo --> <img alt="logo" src="images/swapfiets-logo-vector.svg">
+			<img alt="menu" class="hamburger" src="images/hamburger.png">
 
-			<ul>
+
+
+			<!--<ul>
 				<li>
+					Home
+				</li>
+				<li>
+					Deluxe 7
+				</li>
+				<li>
+					Power 1
+				</li>
+				<li>
+					Power 7
+				</li>
+				<li>
+					Contact
 				</li>
 			</ul>
-		</nav>
+		</nav>-->
 
 		<!-- eind navigatie -->
 
@@ -35,7 +49,7 @@
 				<h1>
 					Altijd een werkende swapfiets voor een vast bedrag per maand.
 				</h1>
-				<ul>
+				<ul class="checkMark">
 					<li>
 						Gratis levering
 					</li>
@@ -46,203 +60,245 @@
 						Elke maand opzegbaar
 					</li>				
 				</ul>
-			</div>
+			</div>	
 			<div class="stadZoeken">
-				<p class="searchTitle">
-					Bekijk welke fietsen er beschikbaar zijn in jouw stad
-				</p>
-				<input type="text" name="Kies stad"> 
-				<a class="bekijkFietsen" href=""></a>
+					<p class="searchTitle">
+						Bekijk welke fietsen er beschikbaar zijn in jouw stad
+					</p>
+					<div id="eersteBekijkFietsen" type="button"><input type="text" name="Kies stad" placeholder="Kies stad"> <a href="untitled.html"><div class="bekijkFietsen" type="button">Bekijk fietsen</div></a></div>
 			</div>
 		</section>
+		<div class="greyBG">
+			<div class="column"><h1 class="fancy">Zo werkt het:</h1></div>
+			<div class="column">
+				<ul>
+					<li id="item1">
+						<h3>Kies jouw stad</h3>
+						<p> Kies jouw stad om te zien welke fietsen beschikbaar zijn</p>
+					</li>
+					<li id="item2">
+						<h3>Selecteer jouw fiets</h3>
+						<p>Bepaal welke fiets het beste bij jou past, is het een snelle e-Bike, een Deluxe of toch de classic Original?</p>
+					</li>
+					<li id="item3">
+						<h3>Supersnelle levering</h3>
+						<p>Haal je fiets op in een van onze winkels of laat je fiets gratis thuisbezorgen. Wij zorgen ervoor dat de fiets perfect op jou is afgesteld en beantwoorden meteen al jouw vragen.</p>
+					</li>
+				</ul>
+			</div>			
+		</div>
+		<h1>Onze bestsellers</h1>
 		<section class="second">
-			<h1>Onze bestsellers</h1>
-			<div class="fietsBlok">
-				<h2>Original</h2>
-				<img class="originalFiets" src="">
+			<div class="column">
+				<h2 class="label">Original</h2>
+				<img alt="omafiets" class="originalFiets" src="images/original.jpeg">
 			</div>
-				<div class="fietsBlok">
-				<h2>Power 7</h2>
-				<p class="eBike"><img class="electrisch" src=""> E-Bike</p>
-				<img class="originalFiets" src="">
-			</div>
-			<div>
-				<a href="" class="bekijk bekijkFietsen">Bekijk fietsen</a>
+			<div class="fietsBlok, column">
+				<h2 class="label">Power 7</h2>
+				<img alt="power7fiets" class="electrisch" src="images/power7.jpeg">
+
 			</div>
 		</section>
-		<img id="promoFoto1" src="">
+
+
+		<a href=""><div class="bekijkFietsen2" type="button">Bekijk fietsen</div></a>
+
 		<section>
-			<h2>
+			<div class="column" id="swapfietsServiceBG"></div>
+			<div class="column greyBG">
+				<h2>
 				De Swapfiets service
-			</h2>
-			<p>
-				Reparatie nodig? Je kunt ons bereiken via de Swapfiets app. Voor de snelste service kun je het best langskomen in een van onze winkels. Ben je in ons servicegebied? Dan kunnen we de fiets op jouw locatie komen repareren binnen 48 uur (of sneller) zodat jij zo snel mogelijk weer kunt fietsen.
-			</p>
-			<ol>
-				<li>
-					1. Download de app.
-				</li>
-				<li>
-					2. Plan een Swap.
-				</li>
-				<li>
-					3. Wij zorgen ervoor de je binnen 48 uur weer op je fiets zit.	
-				</li>
-			</ol>
-			<img src="" class="appStore"><img src="" class="googlePlay">
+				</h2>
+				<p>
+					Reparatie nodig? Je kunt ons bereiken via de Swapfiets app. Voor de snelste service kun je het best langskomen in een van onze winkels. Ben je in ons servicegebied? Dan kunnen we de fiets op jouw locatie komen repareren binnen 48 uur (of sneller) zodat jij zo snel mogelijk weer kunt fietsen.
+				</p>
+				<ol>
+					<li>
+						Download de app.
+					</li>
+					<li>
+						Plan een Swap.
+					</li>
+					<li>
+						Wij zorgen ervoor de je binnen 48 uur weer op je fiets zit.	
+					</li>
+				</ol>
+				<div class="downloadApps">
+					<div class="app"><img alt="applestore" src="images/apple-appstore-badge.png" class="appStore"></div>
+					<div class="app"><img alt="googleplay" src="images/google-play-badge.png" class="googlePlay"></div>
+				</div>
+			</div>
 		</section>
 		<section>
-			<img src="">
-			<h1>Onze winkels</h1>
-			<p>Lekke band? Wil je een andere fiets proberen? Heb je een vraag of wil je gewoon even hallo komen zeggen? Kom langs in een van onze winkels! We helpen je graag verder en kijken uit naar je komst</p>
-			<a href="" class="winkelVinden">Vind een winkel <img src=""></a>
+			<div class="column">
+				<h1>Onze winkels</h1>
+				<p>Lekke band? Wil je een andere fiets proberen? Heb je een vraag of wil je gewoon even hallo komen zeggen? Kom langs in een van onze winkels! We helpen je graag verder en kijken uit naar je komst</p>
+				<a href="" class="winkelVinden">Vind een winkel</a>
+			</div>
+			<div class="column"><img alt="fietsenwinkel" src="images/swapfiets_stores.jpeg"></div>
 		</section>
 		<section>
-			<h1>Veelgestelde vragen</h1>
-			<ul class="veelgesteldeVragen">
-				<li>
-					<details>
-						<summary>Hoe werkt Swapfiets?</summary>
-						<p>Swapfiets is een fietsabonnement. Voor een vast bedrag per maand krijg jij een Swapfiets en zorgen wij ervoor dat 'ie het altijd goed doet. Pech onderweg? Laat het ons weten via de app en we repareren je fiets of we swappen 'm om voor een nieuwe binnen 48 uur.
-						</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Wat gebeurt er als mijn fiets een reparatie nodig heeft?</summary>
-						<p>Geen paniek! Bij jouw membership krijg je gratis standaard service en reparaties binnen 48 uur. Neem contact met ons op via de app, vertel ons wat er mis is en wij komen je fiets repareren of ruilen 'm om voor een nieuwe. Als je binnen ons servicegebied bent, komen we zelfs naar je toe, om je fiets ter plekke te repareren. En anders kun je altijd even langskomen in een van onze winkels, ook zonder afspraak. 
-						</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Hoe krijg ik mijn Swapfiets?</summary>
-						<p>Er zijn 2 manieren om je fiets te krijgen:</p>
-						<ol>
-							<li>
-								<span class="bold">Ophalen in de winkel:</span>  De meest duurzame optie is om de fiets op te halen in een van onze winkels. Kies tijdens het aanmelden een datum en tijd die jou uitkomt. Onze Swappers laten je alle ins en outs van je fiets zien en kunnen alle vragen die je misschien nog hebt over je membership direct beantwoorden. Dit is ook de snelste optie, waarbij je binnen no-time je nieuwe fiets kunt gebruiken. 
-							</li>
-							<li>
-								<span class="bold">Bezorging aan huis:</span> We kunnen jouw Swapfiets ook gratis bij je thuis bezorgen op een afgesproken datum en tijd. *Let op, deze optie is alleen beschikbaar op bepaalde locaties binnen ons servicegebied: Winkels.
-							</li>
-						</ol>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Waar is de dichtsbijzijnde Swapfiets winkel bij mij in de buurt?</summary>
-						<p>Hier vind je al onze winkels & locaties: Winkels.
-						</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Wat gebeurt er als mijn fiets gestolen wordt?</summary>
-						<p>Voorkom dat je fiets gestolen wordt, en zet 'm altijd goed op slot. Al onze fietsen worden geleverd met ingebouwde dubbele sloten, en onze e-bikes hebben daarbovenop nog een slot voor de accu. Als hij toch gestolen wordt (of je raakt 'm kwijt) terwijl hij met 2 sloten op slot staat, betaal je een toeslag, afhankelijk van het type fiets. Maar relax, als je fiets onverhoopt toch gestolen wordt, helpen we je om aangifte te doen bij de politie en zorgen we dat je direct een nieuwe Swapfiets krijgt, zodat je binnen de kortst mogelijke tijd weer de weg op kunt. 
-						</p>
-					</details>
-				</li>
-				<li>
-					<details>
-						<summary>Wat gebeurt er als ik mijn membership wil opzeggen?</summary>
-						<p>Geen probleem. Dit kun je eenvoudig doen via account.swapfiets.com. Lever je fiets daarna in in een van onze winkels. Kijk wel eerst even goed naar de voorwaarden van jouw membership, en houd er rekening mee dat we voor al onze memberships een opzegtermijn van 1 maand hanteren. Daarna maken we jouw fiets weer klaar voor een andere member. Zo gaan we onnodige verspilling tegen. Slim en duurzaam toch? 
-						</p>
-					</details>
-				</li>
-			</ul>
+			<div class="column"><h1>Veelgestelde vragen</h1></div>
+			<div class="column">
+				<ul class="veelgesteldeVragen">
+					<li>
+						<details>
+							<summary>Hoe werkt Swapfiets?</summary>
+							<p>Swapfiets is een fietsabonnement. Voor een vast bedrag per maand krijg jij een Swapfiets en zorgen wij ervoor dat 'ie het altijd goed doet. Pech onderweg? Laat het ons weten via de app en we repareren je fiets of we swappen 'm om voor een nieuwe binnen 48 uur.
+							</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Wat gebeurt er als mijn fiets een reparatie nodig heeft?</summary>
+							<p>Geen paniek! Bij jouw membership krijg je gratis standaard service en reparaties binnen 48 uur. Neem contact met ons op via de app, vertel ons wat er mis is en wij komen je fiets repareren of ruilen 'm om voor een nieuwe. Als je binnen ons servicegebied bent, komen we zelfs naar je toe, om je fiets ter plekke te repareren. En anders kun je altijd even langskomen in een van onze winkels, ook zonder afspraak. 
+							</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Hoe krijg ik mijn Swapfiets?</summary>
+							<p>Er zijn 2 manieren om je fiets te krijgen:</p>
+							<ol>
+								<li>
+									<span class="bold">Ophalen in de winkel:</span>  De meest duurzame optie is om de fiets op te halen in een van onze winkels. Kies tijdens het aanmelden een datum en tijd die jou uitkomt. Onze Swappers laten je alle ins en outs van je fiets zien en kunnen alle vragen die je misschien nog hebt over je membership direct beantwoorden. Dit is ook de snelste optie, waarbij je binnen no-time je nieuwe fiets kunt gebruiken. 
+								</li>
+								<li>
+									<span class="bold">Bezorging aan huis:</span> We kunnen jouw Swapfiets ook gratis bij je thuis bezorgen op een afgesproken datum en tijd. *Let op, deze optie is alleen beschikbaar op bepaalde locaties binnen ons servicegebied: Winkels.
+								</li>
+							</ol>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Waar is de dichtsbijzijnde Swapfiets winkel bij mij in de buurt?</summary>
+							<p>Hier vind je al onze winkels & locaties: Winkels.
+							</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Wat gebeurt er als mijn fiets gestolen wordt?</summary>
+							<p>Voorkom dat je fiets gestolen wordt, en zet 'm altijd goed op slot. Al onze fietsen worden geleverd met ingebouwde dubbele sloten, en onze e-bikes hebben daarbovenop nog een slot voor de accu. Als hij toch gestolen wordt (of je raakt 'm kwijt) terwijl hij met 2 sloten op slot staat, betaal je een toeslag, afhankelijk van het type fiets. Maar relax, als je fiets onverhoopt toch gestolen wordt, helpen we je om aangifte te doen bij de politie en zorgen we dat je direct een nieuwe Swapfiets krijgt, zodat je binnen de kortst mogelijke tijd weer de weg op kunt. 
+							</p>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>Wat gebeurt er als ik mijn membership wil opzeggen?</summary>
+							<p>Geen probleem. Dit kun je eenvoudig doen via account.swapfiets.com. Lever je fiets daarna in in een van onze winkels. Kijk wel eerst even goed naar de voorwaarden van jouw membership, en houd er rekening mee dat we voor al onze memberships een opzegtermijn van 1 maand hanteren. Daarna maken we jouw fiets weer klaar voor een andere member. Zo gaan we onnodige verspilling tegen. Slim en duurzaam toch? 
+							</p>
+						</details>
+					</li>
+				</ul>
+			</div>	
 		</section>
+		<h1>Nieuw bij Swapfiets</h1>
 		<section>
-			<h1>Nieuw bij Swapfiets</h1>
-			<img class="fietsFoto" src="">
-			<h2>Ontmoet de Power 1. De nieuwe urban e-bike van Swapfiets.</h2>
-			<p>Binnenkort beschikbaar in geselecteerde steden. Bekijk jouw stad en zie of de fiets leverbaar is</p>
-			<div>
-				<a href="" class="bekijk bekijkFietsen">Bekijk fietsen</a>
+			<div class="column" id="power1BG"></div>
+			<div class="column, greyBG">
+				<h2>Ontmoet de Power 1. De nieuwe urban e-bike van Swapfiets.</h2>
+				<p>Binnenkort beschikbaar in geselecteerde steden. Bekijk jouw stad en zie of de fiets leverbaar is</p>
+				<a href=""><div class="bekijkFietsen2" type="button">Bekijk fietsen</div></a>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<img src="">
-		<h1>Swapfiets</h1>
-		<ul>
-			<li>
-				<a href="">Vacatures</a>
-			</li>
-			<li>
-				<a href="">Pers</a>
-			</li>
-			<li>
-				<a href="">Voor Bedrijven</a>
-			</li>
-		</ul>
-		<h1>Legal</h1>
-		<ul>
-			<li>
-				<a href="">Algemene voorwaarden</a>
-			</li>
-			<li>
-				<a href="">Privacy</a>
-			</li>
-			<li>
-				<a href="">Responsible Disclosure</a>
-			</li>
-			<li>
-				<a href="">Cookies</a>
-			</li>
-		</ul>
-		<h1>Help</h1>
-		<ul>
-			<li>
-				<a href="">Contact</a>
-			</li>
-			<li>
-				<a href="">Winkels</a>
-			</li>
-			<li>
-				<a href="">FAQ</a>
-			</li>
-		</ul>
-		<h1>Kies land en taal</h1>
-		<select name="Land">
-			<option value="Nederland">Nederland</option>
-			<option value="Engeland">Engeland</option>
-			<option value="Frankrijk">Frankrijk</option>
-			<option value="Duitsland">Duitsland</option>
-		</select>
-		<select name="Taal">
-			<option value="Nederlands">Nederlands</option>
-			<option value="English">English</option>
-			<option value="French">French</option>
-			<option value="Deutsch">Deutsch</option>
-		</select>
-		<ul class="betaalMethoden">
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-		</ul>
-				<ul class="socials">
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-		</ul>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<img alt="swapfiets logo" src="images/swapfiets-logo-vector.svg">
+				</div>
+				<div class="footer-col">
+					<h1>Swapfiets</h1>
+					<ul>
+						<li>
+							<a href="">Vacatures</a>
+						</li>
+						<li>
+							<a href="">Pers</a>
+						</li>
+						<li>
+							<a href="">Voor Bedrijven</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h1>Legal</h1>
+					<ul>
+					<li>
+						<a href="">Algemene voorwaarden</a>
+					</li>
+					<li>
+						<a href="">Privacy</a>
+					</li>
+					<li>
+						<a href="">Responsible Disclosure</a>
+					</li>
+					<li>
+						<a href="">Cookies</a>
+					</li>
+				</ul>
+				</div>
+				<div class="footer-col">
+					<h1>Help</h1>
+					<ul>
+						<li>
+							<a href="">Contact</a>
+						</li>
+						<li>
+							<a href="">Winkels</a>
+						</li>
+						<li>
+							<a href="">FAQ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h1>Kies land en taal</h1>
+					<select name="Land">
+					<option value="Nederland">Nederland</option>
+					<option value="Engeland">Engeland</option>
+					<option value="Frankrijk">Frankrijk</option>
+					<option value="Duitsland">Duitsland</option>
+					</select>
+					<select name="Taal">
+					<option value="Nederlands">Nederlands</option>
+					<option value="English">English</option>
+					<option value="French">French</option>
+					<option value="Deutsch">Deutsch</option>
+					</select>
+				</div>	
+			</div>
+		</div>		
+				<ul class="betaalMethoden">
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+			</ul>
+					<ul class="socials">
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+			</ul>
 	</footer>
 	<script src="scripts/script.js"></script>
 </body>

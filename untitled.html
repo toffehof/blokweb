@@ -12,73 +12,84 @@
 
 <body>
 	<header>
-
 		<!-- hoofd navigatie -->
-
-		<nav >
-			<!-- logo --> <img src="">
-			<ul>
-				<li>
-				</li>
-			</ul>
+		<nav>
+		<!-- logo --> 
+			<img alt="swapfiets logo" src="images/swapfiets-logo-vector.svg">
+			<img alt="menu" class="hamburger" src="images/hamburger.png">
+			<p class="stad"> Dit bieden we aan in: *locatie* <a href="">Wijzigen</a>
 		</nav>
 		<!-- eind navigatie -->
-		<p> Dit bieden we aan in: *locatie* <a href="">Wijzigen</a>
 	</header>
 	<main>
 		<section>
-			<h1>Deluxe 7</h1>
-			<!-- carrousel -->
-			<img src="">
-			<p>1 / 6</p>
-		</section>
-		<section>
-			<h3>€ 19,90 per maand</h3>
-			<div>
-				<a href="bekijkFietsen">Abboneren</a>
+			<div class="column70">
+				<h1 class="titelMobiel">Deluxe 7</h1>
+				<img alt="original fiets" src="images/original.jpeg">
+				<p id="counter">1 / 6</p>
+			</div>
+			<div class="column30">
+				<div class="prijsMobiel">	
+					<h3>€ 19,90 per maand</h3>
+					<a href="index.html"><div class="bekijkFietsen" type="button">Abonneren</div></a>
+				</div>
+				<h1 class="titelDesktop">Deluxe 7</h1>
+
+				<!-- deze lijstweergave verwdijnt op de desktop -->
+				<div class="mobileSpecs">
+					<p><span class="bold">Unisex frame:</span> voor fietsers van 1,60 tot 2 meter.</p>
+					<p><span class="bold">Versnellingen</span><br></p>
+					<p><span class="bold">Remmen</span><br>
+						Hand- en terugtraprem</p>
+					<p><span class="bold">Licht</span><br>
+						Led-licht aangedreven door naafdynamo</p>
+					<p><span class="bold">Slot</span><br>
+						Ringslot + kettingslot</p>
+				</div>	
+
+				<!-- deze grid weergave verwdijnt op de smartphone -->
+				<div class="desktopSpecs">
+					<p><span class="bold">Unisex frame:</span> voor fietsers van 1,60 tot 2 meter.</p>
+					<div class="tweebijtwee">
+						<div class="spec">
+							<span class="bold">Versnellingen</span><br>
+							7 versnellingen
+						</div>
+						<div class="spec">
+							<span class="bold">Remmen</span><br>
+							Hand- en terugtraprem
+						</div>
+						<div class="spec">
+							<span class="bold">Licht</span><br>
+							Led-licht aangedreven door naafdynamo
+						</div>
+						<div class="spec">
+							<span class="bold">Slot</span><br>
+							Ringslot + kettingslot
+						</div>
+					</div>	
+				</div>	
+
+				<!-- Hier combineer ik verschillende klasses met de responsiveness in mn CSS, om de juiste volgorde aan te houden van prijzen en titels-->
+				<div class="prijsDesktop">	
+					<h3>€ 19,90 per maand</h3>
+					<a href="index.html"><div class="bekijkFietsen" type="button">Abonneren</div></a>
+				</div>
+
+				<ul class="checkMark">
+					<li>
+						<p><span class="bold">Snel & gemakkelijk</span> in de winkel ophalen.</p>
+					</li>
+					<li>
+						<p><span class="bold">Gratis levering.</span> Waar dan ook, wanneer dan ook</p>
+					</li>
+					<li>
+						<p>Reparatiedienst <span class="bold">binnen 48 uur.</span></p>
+					</li>
+				</ul>
 			</div>
 		</section>
-		<section>
-			<p>
-				<span class="bold">Unisex frame:</span> voor fietsers van 1,60 tot 2 meter.
-			</p>
-			<p>
-				<span class="bold">Versnellingen</span><br>
-				7 versnellingen
-			</p>
-			<p>
-				<span class="bold">Remmen</span><br>
-				Hand- en terugtraprem
-			</p>
-			<p>
-				<span class="bold">Licht</span><br>
-				Led-licht aangedreven door naafdynamo
-			</p>
-			<p>
-				<span class="bold">Slot</span><br>
-				Ringslot + kettingslot
-			</p>
-		</section>
-		<section>
-			<ul class="vinkjes">
-				<li>
-					<p>
-						<span class="bold">Snel & gemakkelijk</span> in de winkel ophalen.
-					</p>
-				</li>
-				<li>
-					<p>
-						<span class="bold">Gratis levering.</span> Waar dan ook, wanneer dan ook
-					</p>
-				</li>
-				<li>
-					<p>Reparatiedienst <span class="bold">binnen 48 uur.</span></p>
-				</li>
-			</ul>
-		</section>
-		<section>
-			<img src="">
-		</section>
+
 		<section>
 			<h1>Veelgestelde vragen</h1>
 			<ul class="veelgesteldeVragen">
@@ -133,120 +144,124 @@
 				</li>
 			</ul>
 		</section>
-		<section>
-			<h1>Meer opties</h1>
-			<div>
-				<h2>
-					Power 1
-				</h2>
-				<h3>
-					€ 49,90 per maand
-				</h3>
-				<div>
-					<a href="bekijkFietsen">Lees meer</a>
-				</div>
-			</div>
-			<div>
-				<h2>
-					Power 7
-				</h2>
-				<h3>
-					€ 75,00 per maand
-				</h3>
-				<div>
-					<a href="bekijkFietsen">Lees meer</a>
-				</div>
-			</div>
 
-			<h2>Ontmoet de Power 1. De nieuwe urban e-bike van Swapfiets.</h2>
-			<p>Binnenkort beschikbaar in geselecteerde steden. Bekijk jouw stad en zie of de fiets leverbaar is</p>
-			<div>
-				<a href="" class="bekijkFietsen">Bekijk fietsen</a>
+		<img alt="fiets deluxe 7" id="deluxe7fietser" src="images/deluxe7fietser.png">
+		<h1>Meer opties</h1>
+
+		<section class="meerOpties">
+			<div class="column">
+				<div class="originalVrouw">
+					<h2>Original</h2>
+					<h3>€ 16,90 per maand</h3>
+					<a><div class="bekijkFietsen" type="button">Lees meer</div></a>
+				</div>
+			</div>	
+			<div class="column">	
+				<div class="power1man">
+					<h2>Power 1</h2>
+					<h3>€ 59,90 per maand</h3>
+					<a><div class="bekijkFietsen" type="button">Lees meer</div></a>
+				</div>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<img src="">
-		<h1>Swapfiets</h1>
-		<ul>
-			<li>
-				<a href="">Vacatures</a>
-			</li>
-			<li>
-				<a href="">Pers</a>
-			</li>
-			<li>
-				<a href="">Voor Bedrijven</a>
-			</li>
-		</ul>
-		<h1>Legal</h1>
-		<ul>
-			<li>
-				<a href="">Algemene voorwaarden</a>
-			</li>
-			<li>
-				<a href="">Privacy</a>
-			</li>
-			<li>
-				<a href="">Responsible Disclosure</a>
-			</li>
-			<li>
-				<a href="">Cookies</a>
-			</li>
-		</ul>
-		<h1>Help</h1>
-		<ul>
-			<li>
-				<a href="">Contact</a>
-			</li>
-			<li>
-				<a href="">Winkels</a>
-			</li>
-			<li>
-				<a href="">FAQ</a>
-			</li>
-		</ul>
-		<h1>Kies land en taal</h1>
-		<select name="Land">
-			<option value="Nederland">Nederland</option>
-			<option value="Engeland">Engeland</option>
-			<option value="Frankrijk">Frankrijk</option>
-			<option value="Duitsland">Duitsland</option>
-		</select>
-		<select name="Taal">
-			<option value="Nederlands">Nederlands</option>
-			<option value="English">English</option>
-			<option value="French">French</option>
-			<option value="Deutsch">Deutsch</option>
-		</select>
-		<ul class="betaalMethoden">
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-		</ul>
-				<ul class="socials">
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-			<li>
-				<img src="">
-			</li>
-		</ul>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<img alt="swapfiets logo" src="images/swapfiets-logo-vector.svg">
+				</div>
+				<div class="footer-col">
+					<h1>Swapfiets</h1>
+					<ul>
+						<li>
+							<a href="">Vacatures</a>
+						</li>
+						<li>
+							<a href="">Pers</a>
+						</li>
+						<li>
+							<a href="">Voor Bedrijven</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h1>Legal</h1>
+					<ul>
+					<li>
+						<a href="">Algemene voorwaarden</a>
+					</li>
+					<li>
+						<a href="">Privacy</a>
+					</li>
+					<li>
+						<a href="">Responsible Disclosure</a>
+					</li>
+					<li>
+						<a href="">Cookies</a>
+					</li>
+				</ul>
+				</div>
+				<div class="footer-col">
+					<h1>Help</h1>
+					<ul>
+						<li>
+							<a href="">Contact</a>
+						</li>
+						<li>
+							<a href="">Winkels</a>
+						</li>
+						<li>
+							<a href="">FAQ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h1>Kies land en taal</h1>
+					<select name="Land">
+					<option value="Nederland">Nederland</option>
+					<option value="Engeland">Engeland</option>
+					<option value="Frankrijk">Frankrijk</option>
+					<option value="Duitsland">Duitsland</option>
+					</select>
+					<select name="Taal">
+					<option value="Nederlands">Nederlands</option>
+					<option value="English">English</option>
+					<option value="French">French</option>
+					<option value="Deutsch">Deutsch</option>
+					</select>
+				</div>	
+			</div>
+		</div>		
+				<ul class="betaalMethoden">
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+			</ul>
+					<ul class="socials">
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+				<li>
+					<img alt="" src="">
+				</li>
+			</ul>
 	</footer>
 	<script src="scripts/script.js"></script>
 </body>
